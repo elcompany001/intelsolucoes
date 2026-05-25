@@ -1,54 +1,254 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Intel Soluções</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Intel Soluções | Relacionamento • Dados • Tecnologia</title>
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial;
-background:#f5f7fa;
-color:#1f2937;
+padding:0;
+box-sizing:border-box;
 }
 
-.hero{
-padding:80px 20px;
-text-align:center;
+body{
+font-family:Segoe UI,Arial,sans-serif;
+background:#f4f8fb;
+color:#213547;
+line-height:1.6;
 }
 
-h1{
-font-size:56px;
-margin-bottom:10px;
+header{
+
+background:
+linear-gradient(
+135deg,
+#0b1f33,
+#123a56
+);
+
+color:white;
+
+padding:90px 20px;
+
 }
 
-.sub{
-font-size:24px;
-color:#16a085;
-}
-
-.box{
-max-width:1000px;
+.container{
+max-width:1200px;
 margin:auto;
-padding:40px;
 }
 
-.card{
-background:white;
-padding:30px;
-border-radius:12px;
-box-shadow:0 4px 20px rgba(0,0,0,.08);
+.logo{
+
+font-size:60px;
+font-weight:700;
+
+}
+
+.logo span{
+color:#31c9a3;
+}
+
+.subtitle{
+
+font-size:28px;
+
+margin-top:20px;
+
+color:#b6d7e7;
+
+}
+
+.text{
+
+margin-top:30px;
+
+max-width:700px;
+
+font-size:20px;
+
+}
+
+.buttons{
+
+margin-top:40px;
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
 }
 
 .btn{
-display:inline-block;
-padding:15px 30px;
-background:#16a085;
-color:white;
-text-decoration:none;
+
+padding:16px 28px;
+
 border-radius:8px;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+.primary{
+
+background:#2cc89f;
+
+color:white;
+
+}
+
+.secondary{
+
+border:1px solid white;
+
+color:white;
+
+}
+
+section{
+
+padding:80px 20px;
+
+}
+
+.title{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+text-align:center;
+
+}
+
+.subtitle2{
+
+text-align:center;
+
+color:#556;
+
+margin-bottom:50px;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(
+auto-fit,
+minmax(280px,1fr)
+);
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:12px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.card h3{
+
+margin-bottom:20px;
+
+color:#0f3553;
+
+}
+
+.card p{
+
+color:#666;
+
+}
+
+.dark{
+
+background:#0f2338;
+
+color:white;
+
+}
+
+.dark .card{
+
+background:#173752;
+
+color:white;
+
+}
+
+.contact{
+
+text-align:center;
+
+}
+
+.contact a{
+
+display:inline-block;
+
+margin:10px;
+
+color:#31c9a3;
+
+text-decoration:none;
+
+font-size:18px;
+
+}
+
+footer{
+
+background:#081625;
+
+color:#ccc;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+@media(max-width:768px){
+
+.logo{
+
+font-size:40px;
+
+}
+
+.subtitle{
+
+font-size:22px;
+
+}
+
+.text{
+
+font-size:18px;
+
+}
+
 }
 
 </style>
@@ -57,35 +257,215 @@ border-radius:8px;
 
 <body>
 
-<section class="hero">
+<header>
 
-<h1>Intel Soluções</h1>
+<div class="container">
 
-<div class="sub">
-Relacionamento • Dados • Tecnologia
+<div class="logo">
+
+INTEL <span>SOLUÇÕES</span>
+
 </div>
 
-</section>
+<div class="subtitle">
 
-<div class="box">
+Relacionamento • Dados • Tecnologia
 
-<div class="card">
+</div>
 
-<h2>Quem somos</h2>
+<div class="text">
 
-<p>
-Soluções em relacionamento com clientes, dados e tecnologia para operações empresariais.
-</p>
+Transformamos relacionamento com clientes em resultados por meio de tecnologia, inteligência de dados e excelência operacional.
 
-<br>
+</div>
 
-<a class="btn" href="#">
-Conheça mais
+<div class="buttons">
+
+<a href="#contato" class="btn primary">
+
+Entrar em contato
+
+</a>
+
+<a href="#solucoes" class="btn secondary">
+
+Conhecer soluções
+
 </a>
 
 </div>
 
 </div>
+
+</header>
+
+<section>
+
+<div class="container">
+
+<h2 class="title">
+
+Quem Somos
+
+</h2>
+
+<p class="subtitle2">
+
+Atuamos conectando pessoas, dados e tecnologia para apoiar operações empresariais.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="solucoes">
+
+<div class="container">
+
+<h2 class="title">
+
+Soluções
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>
+
+Relacionamento
+
+</h3>
+
+<p>
+
+Estratégias e operações voltadas para experiência e comunicação com clientes.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Dados & Analytics
+
+</h3>
+
+<p>
+
+Estruturação e análise de dados para geração de valor e tomada de decisão.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Tecnologia
+
+</h3>
+
+<p>
+
+Automação, integração e evolução contínua de processos.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="dark">
+
+<div class="container">
+
+<h2 class="title">
+
+Estrutura
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+Infraestrutura preparada para suportar operações escaláveis.
+
+</div>
+
+<div class="card">
+
+Monitoramento e gestão orientados por indicadores.
+
+</div>
+
+<div class="card">
+
+Integração entre atendimento, dados e tecnologia.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contato">
+
+<div class="container contact">
+
+<h2 class="title">
+
+Contato
+
+</h2>
+
+<p>
+
+Em breve nossos canais oficiais estarão disponíveis.
+
+</p>
+
+<br>
+
+<a href="#">
+
+LinkedIn
+
+</a>
+
+<a href="#">
+
+WhatsApp
+
+</a>
+
+<a href="#">
+
+E-mail
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+Intel Soluções © 2026
+
+</footer>
 
 </body>
 
